@@ -102,6 +102,7 @@ Mapped controls MAY include:
 
 Control classification SHALL be documented.
 
+
 ---
 
 # 7. Traceability
@@ -212,4 +213,3 @@ v0.1
 Date:
 
 2026
-
