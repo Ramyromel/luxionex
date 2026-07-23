@@ -12,9 +12,9 @@ Draft — Foundational Repository Specification
 
 # 1. Purpose
 
-This specification defines the required structure, metadata, governance requirements, and lifecycle for repositories within LUXIONEX.
+This specification defines the required structure, governance, lifecycle, and operational requirements for repositories managed under the LUXIONEX Governance Framework.
 
-The objective is to ensure that repositories are consistently organized, secure, maintainable, traceable, and aligned with the enterprise governance framework.
+The objective is to ensure that repositories are consistent, secure, maintainable, traceable, and governed throughout their lifecycle.
 
 This specification derives authority from:
 
@@ -36,8 +36,9 @@ This specification applies to:
 - Documentation Repositories
 - Research Repositories
 - Infrastructure Repositories
+- Governance Repositories
 - Internal Tool Repositories
-- Approved Public Repositories
+- Public Repositories
 
 ---
 
@@ -45,14 +46,12 @@ This specification applies to:
 
 Every repository SHALL:
 
-- Have a defined governance purpose
-- Maintain a consistent structure
-- Preserve traceability
-- Protect organizational assets
-- Support secure development
-- Remain maintainable throughout its lifecycle
-
-Repositories SHALL avoid undocumented configurations.
+- Have a defined purpose
+- Have an assigned owner
+- Maintain governance compliance
+- Support traceability
+- Preserve repository integrity
+- Enable secure collaboration
 
 ---
 
@@ -63,12 +62,11 @@ Every repository SHALL define:
 - Repository Name
 - Repository Identifier
 - Repository Owner
-- Repository Maintainers
-- Version
-- Status
-- Classification
-- License
-- Primary Branch
+- Repository Purpose
+- Repository Classification
+- Lifecycle Status
+- Primary Maintainer
+- Governance Authority
 
 ---
 
@@ -86,91 +84,79 @@ Repositories SHOULD include:
 - tests/
 - .github/
 
-Repository-specific additions MAY be approved where justified.
+Alternative structures MAY be approved when justified.
 
 ---
 
-# 6. Repository Requirements
+# 6. Repository Governance
 
 Every repository SHALL define:
 
-- Purpose
-- Scope
 - Ownership
-- Branch strategy
-- Review process
-- Security requirements
-- Documentation requirements
-- Lifecycle status
+- Maintainers
+- Review Authority
+- Branch Protection
+- Release Process
+- Access Management
 
-Repositories SHALL maintain a complete change history.
-
----
-
-# 7. Governance Alignment
-
-Every repository SHALL align with:
-
-- Enterprise Constitution
-- Governance Framework
-- Applicable Standards
-- Applicable Policies
-- Related Controls
-- Supporting Procedures
-
-Repository governance SHALL remain consistent across the organization.
+Repository governance SHALL remain documented.
 
 ---
 
-# 8. Traceability
+# 7. Version Control Requirements
 
-Repositories SHALL maintain traceability to:
+Repositories SHALL support:
 
-Repository
-        ↓
-Requirement
-        ↓
-Policy
-        ↓
-Control
-        ↓
-Procedure
-        ↓
-Verification
-        ↓
-Evidence
+- Version history
+- Tagged releases
+- Protected branches
+- Change tracking
+- Commit traceability
 
-Every relationship SHALL remain auditable.
+History SHALL remain auditable.
 
 ---
 
-# 9. Verification
+# 8. Security Requirements
 
-Repository compliance MAY be verified through:
+Repositories SHALL implement:
 
-- Repository Review
-- Technical Review
-- Security Review
-- Documentation Review
-- Compliance Assessment
-- Internal Audit
+- Secret protection
+- Dependency monitoring
+- Vulnerability management
+- Access control
+- Secure configuration
 
-Verification results SHALL be documented.
+Sensitive information SHALL NOT be committed.
+
+---
+
+# 9. Documentation Requirements
+
+Repositories SHOULD maintain:
+
+- Project overview
+- Architecture documentation
+- Governance documentation
+- Security documentation
+- Operational documentation
+
+Documentation SHALL remain synchronized with implementation.
 
 ---
 
 # 10. Compliance
 
-Compliance SHALL evaluate:
+Repository compliance SHALL evaluate:
 
-- Repository structure
+- Governance conformity
 - Documentation completeness
-- Security configuration
-- Governance implementation
+- Security posture
+- Repository integrity
 - Traceability
-- Outstanding findings
+- Maintenance status
 
-Non-compliant repositories SHALL require corrective action.
+Compliance findings SHALL be documented.
 
 ---
 
@@ -179,14 +165,12 @@ Non-compliant repositories SHALL require corrective action.
 Repositories SHALL follow the lifecycle:
 
 1. Creation
-2. Review
-3. Approval
-4. Active Development
-5. Maintenance
-6. Archive
-7. Retirement
+2. Active Development
+3. Maintenance
+4. Deprecation
+5. Archival
 
-Historical repository information SHALL remain preserved.
+Archived repositories SHALL preserve historical integrity.
 
 ---
 
@@ -197,7 +181,7 @@ Exceptions require:
 - Documented justification
 - Risk assessment
 - Governance approval
-- Defined review schedule
+- Review schedule
 
 Approved exceptions SHALL remain traceable.
 

@@ -12,9 +12,9 @@ Draft — Foundational Document Specification
 
 # 1. Purpose
 
-This specification defines the required structure, content, and metadata for governance documents within LUXIONEX.
+This specification defines the required structure, metadata, lifecycle, and quality requirements for governance documents within the LUXIONEX Governance Framework.
 
-It ensures consistency, traceability, interoperability, and long-term maintainability.
+The objective is to ensure that all governance documents are consistent, traceable, maintainable, and auditable.
 
 This specification derives authority from:
 
@@ -22,11 +22,7 @@ Enterprise Constitution
         ↓
 Governance Framework
         ↓
-Standards
-        ↓
-Policies
-        ↓
-Procedures
+Document Governance Standard
         ↓
 Document Specification
 
@@ -36,56 +32,158 @@ Document Specification
 
 This specification applies to:
 
-- Constitutions
-- Frameworks
 - Standards
 - Policies
-- Controls
 - Procedures
+- Controls
 - Specifications
 - Templates
+- Governance Reports
+- Evidence Documents
+- Verification Documents
 
 ---
 
-# 3. Required Metadata
+# 3. Document Objectives
+
+Every governance document SHALL:
+
+- Be uniquely identifiable
+- Follow an approved structure
+- Be version controlled
+- Be reviewable
+- Be traceable
+- Support governance objectives
+
+---
+
+# 4. Required Metadata
 
 Every governance document SHALL define:
 
-- Title
+- Document Title
+- Document Identifier
 - Version
 - Status
-- Document Owner
+- Owner
 - Approval Authority
 - Effective Date
-- Review Date
 - Classification
 
 ---
 
-# 4. Document Structure
+# 5. Required Structure
 
-Documents SHOULD contain:
+Every governance document SHOULD include:
 
 - Purpose
 - Scope
-- Definitions
+- Definitions (when applicable)
 - Requirements
 - Responsibilities
-- Verification
+- Traceability
 - References
 - Approval
 
----
-
-# 5. Traceability
-
-Every document SHALL reference its governing authority and related artifacts.
+Additional sections MAY be added when justified.
 
 ---
 
-# 6. Verification
+# 6. Document Classification
 
-Document compliance SHALL be verified through governance review.
+Governance documents MAY be classified as:
+
+- Public
+- Internal
+- Confidential
+- Restricted
+
+Classification SHALL be explicitly documented.
+
+---
+
+# 7. Version Management
+
+Every document SHALL maintain:
+
+- Version number
+- Revision history
+- Approval history
+- Change summary
+
+Document history SHALL remain auditable.
+
+---
+
+# 8. Review Requirements
+
+Documents SHALL be reviewed:
+
+- Before approval
+- Following significant governance changes
+- Following major architectural changes
+- During periodic governance reviews
+
+Review records SHALL be retained.
+
+---
+
+# 9. Quality Requirements
+
+Governance documents SHOULD be:
+
+- Accurate
+- Complete
+- Consistent
+- Verifiable
+- Understandable
+- Maintainable
+
+Quality assessments MAY be documented.
+
+---
+
+# 10. Traceability
+
+Every governance document SHOULD identify:
+
+- Parent documents
+- Related standards
+- Related policies
+- Supporting procedures
+- Associated controls
+- Supporting evidence
+
+Traceability SHALL remain current.
+
+---
+
+# 11. Lifecycle
+
+Governance documents SHALL follow the lifecycle:
+
+1. Draft
+2. Review
+3. Approval
+4. Publication
+5. Maintenance
+6. Revision
+7. Retirement
+
+Retired documents SHALL remain archived.
+
+---
+
+# 12. Exceptions
+
+Exceptions require:
+
+- Documented justification
+- Risk assessment
+- Governance approval
+- Defined review schedule
+
+Approved exceptions SHALL remain traceable.
 
 ---
 

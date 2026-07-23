@@ -12,9 +12,9 @@ Draft — Foundational Policy Specification
 
 # 1. Purpose
 
-This specification defines the required structure, metadata, and quality requirements for all governance policies within LUXIONEX.
+This specification defines the structure, mandatory components, lifecycle, and quality requirements for governance policies within the LUXIONEX Governance Framework.
 
-The objective is to ensure that policies are consistent, traceable, enforceable, and aligned with the governance hierarchy.
+The objective is to ensure that all policies are consistent, enforceable, traceable, and aligned with governance objectives.
 
 This specification derives authority from:
 
@@ -30,15 +30,16 @@ Policy Specification
 
 # 2. Scope
 
-This specification applies to:
+This specification applies to all governance policies, including:
 
-- Governance Policies
 - Security Policies
 - Repository Policies
 - Documentation Policies
-- Architecture Policies
+- Change Management Policies
 - Compliance Policies
+- Risk Policies
 - Operational Policies
+- Architecture Policies
 
 ---
 
@@ -47,13 +48,10 @@ This specification applies to:
 Every policy SHALL:
 
 - Define governance intent
-- Support organizational objectives
-- Be measurable
-- Be enforceable
-- Be reviewable
-- Be traceable
-
-Policies SHALL avoid ambiguity.
+- Define mandatory requirements
+- Assign responsibilities
+- Support governance decisions
+- Enable compliance assessment
 
 ---
 
@@ -62,30 +60,30 @@ Policies SHALL avoid ambiguity.
 Every policy SHALL define:
 
 - Policy Title
+- Policy Identifier
 - Version
 - Status
-- Document Owner
+- Owner
 - Approval Authority
 - Effective Date
-- Review Date
 - Classification
 
 ---
 
 # 5. Required Structure
 
-Policies SHOULD include:
+Every policy SHOULD include:
 
 - Purpose
 - Scope
-- Definitions
 - Policy Statements
 - Responsibilities
-- Compliance
-- Verification
+- Compliance Requirements
 - Exceptions
 - References
 - Approval
+
+Additional sections MAY be included when justified.
 
 ---
 
@@ -93,108 +91,98 @@ Policies SHOULD include:
 
 Policy statements SHALL:
 
-- Use normative language
-- Be concise
-- Be testable
-- Be implementable
+- Be clear
+- Be measurable where practical
+- Avoid ambiguity
+- Support governance objectives
+- Be enforceable
 
-Recommended keywords include:
+Normative language SHOULD use:
 
 - SHALL
+- SHALL NOT
 - SHOULD
 - MAY
-- MUST NOT
 
 ---
 
-# 7. Governance Alignment
+# 7. Responsibilities
 
-Every policy SHALL align with:
+Policies SHOULD define responsibilities for:
 
-- Enterprise Constitution
-- Governance Framework
-- Applicable Standards
-- Related Controls
-- Supporting Procedures
+- Governance Authority
+- Repository Owners
+- Maintainers
+- Contributors
+- Reviewers
+- Auditors
 
-Conflicting policies SHALL be resolved through governance review.
-
----
-
-# 8. Traceability
-
-Policies SHALL maintain traceability to:
-
-Policy
-        ↓
-Controls
-        ↓
-Procedures
-        ↓
-Verification
-        ↓
-Evidence
-
-Every relationship SHALL remain auditable.
+Responsibilities SHALL remain documented.
 
 ---
 
-# 9. Verification
+# 8. Compliance
 
-Policy implementation MAY be verified through:
+Policies SHALL define:
 
-- Governance Reviews
-- Compliance Assessments
-- Technical Validation
-- Manual Inspection
-- Security Reviews
-- Internal Audits
+- Compliance expectations
+- Verification methods
+- Required evidence
+- Review frequency
 
-Verification results SHALL be documented.
+Compliance SHALL be measurable.
 
 ---
 
-# 10. Compliance
+# 9. Exceptions
 
-Compliance SHALL evaluate:
+Policies SHALL define:
 
-- Policy implementation
-- Requirement coverage
-- Verification completion
-- Evidence availability
-- Outstanding gaps
-
-Non-compliance SHALL require corrective action.
-
----
-
-# 11. Policy Lifecycle
-
-Policies SHALL follow the lifecycle:
-
-1. Draft
-2. Review
-3. Approval
-4. Publication
-5. Implementation
-6. Monitoring
-7. Revision
-8. Retirement
-
-Historical versions SHALL remain preserved.
-
----
-
-# 12. Exceptions
-
-Exceptions require:
-
-- Documented justification
-- Risk assessment
-- Governance approval
-- Defined review schedule
+- Exception process
+- Approval authority
+- Risk evaluation
+- Review schedule
 
 Approved exceptions SHALL remain traceable.
+
+---
+
+# 10. Review Requirements
+
+Policies SHALL be reviewed:
+
+- Periodically
+- After governance changes
+- After security incidents
+- Following major organizational changes
+
+Review outcomes SHALL be documented.
+
+---
+
+# 11. Version Management
+
+Policies SHALL maintain:
+
+- Version history
+- Change summary
+- Approval history
+- Revision records
+
+Historical versions SHALL remain available.
+
+---
+
+# 12. Approval
+
+Policies SHALL identify:
+
+- Document Owner
+- Approval Authority
+- Approval Status
+- Effective Version
+
+Approved policies SHALL become authoritative governance artifacts.
 
 ---
 

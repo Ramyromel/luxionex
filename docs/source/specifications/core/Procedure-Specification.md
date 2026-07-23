@@ -12,9 +12,9 @@ Draft — Foundational Procedure Specification
 
 # 1. Purpose
 
-This specification defines the required structure, metadata, and quality requirements for all procedures within LUXIONEX.
+This specification defines the required structure, lifecycle, and quality requirements for governance procedures within the LUXIONEX Governance Framework.
 
-The objective is to ensure that governance procedures are consistent, repeatable, traceable, and verifiable across the organization.
+The objective is to ensure that governance procedures are consistent, repeatable, auditable, and aligned with approved standards and policies.
 
 This specification derives authority from:
 
@@ -30,13 +30,14 @@ Procedure Specification
 
 # 2. Scope
 
-This specification applies to:
+This specification applies to all governance procedures, including:
 
-- Governance Procedures
 - Security Procedures
 - Repository Procedures
 - Documentation Procedures
-- Architecture Procedures
+- Change Management Procedures
+- Verification Procedures
+- Evidence Collection Procedures
 - Compliance Procedures
 - Operational Procedures
 
@@ -47,13 +48,10 @@ This specification applies to:
 Every procedure SHALL:
 
 - Define repeatable activities
+- Assign responsibilities
+- Describe execution steps
 - Support governance implementation
-- Produce measurable outcomes
-- Identify responsibilities
-- Be verifiable
-- Remain maintainable
-
-Procedures SHALL avoid ambiguity.
+- Produce verifiable outcomes
 
 ---
 
@@ -62,132 +60,134 @@ Procedures SHALL avoid ambiguity.
 Every procedure SHALL define:
 
 - Procedure Title
+- Procedure Identifier
 - Version
 - Status
-- Document Owner
+- Owner
 - Approval Authority
 - Effective Date
-- Review Date
 - Classification
 
 ---
 
 # 5. Required Structure
 
-Procedures SHOULD include:
+Every procedure SHOULD include:
 
 - Purpose
 - Scope
-- Roles and Responsibilities
 - Preconditions
-- Inputs
+- Roles and Responsibilities
 - Procedure Steps
-- Outputs
-- Verification
+- Expected Outputs
+- Verification Activities
 - References
 - Approval
+
+Additional sections MAY be added when justified.
 
 ---
 
 # 6. Procedure Requirements
 
-Procedures SHALL:
+Procedure steps SHALL:
 
-- Define clear execution steps
-- Identify responsible roles
-- Specify expected outputs
-- Identify required evidence
-- Reference applicable controls
+- Be sequential where applicable
+- Be clear and unambiguous
+- Be repeatable
+- Produce measurable outcomes
+- Support governance objectives
 
-Procedure steps SHALL be sequential and repeatable.
+Normative language SHOULD use:
 
----
-
-# 7. Governance Alignment
-
-Every procedure SHALL align with:
-
-- Enterprise Constitution
-- Governance Framework
-- Applicable Standards
-- Applicable Policies
-- Related Controls
-
-Conflicting procedures SHALL be reviewed through governance processes.
+- SHALL
+- SHALL NOT
+- SHOULD
+- MAY
 
 ---
 
-# 8. Traceability
+# 7. Inputs and Outputs
 
-Procedures SHALL maintain traceability to:
+Every procedure SHOULD define:
 
-Procedure
-        ↓
-Control
-        ↓
-Verification
-        ↓
-Evidence
+Inputs:
 
-Every relationship SHALL remain auditable.
+- Required information
+- Required tools
+- Required approvals
 
----
+Outputs:
 
-# 9. Verification
-
-Procedure execution MAY be verified through:
-
-- Process Reviews
-- Technical Reviews
-- Manual Inspection
-- Compliance Assessment
-- Internal Audit
-
-Verification results SHALL be documented.
+- Generated records
+- Evidence
+- Reports
+- Decisions
 
 ---
 
-# 10. Compliance
+# 8. Verification
 
-Compliance SHALL evaluate:
+Procedures SHALL define:
 
-- Procedure execution
-- Required outputs
-- Evidence collection
-- Verification completion
-- Outstanding gaps
+- Verification activities
+- Verification criteria
+- Required evidence
+- Completion criteria
 
-Non-compliance SHALL require corrective action.
-
----
-
-# 11. Procedure Lifecycle
-
-Procedures SHALL follow the lifecycle:
-
-1. Draft
-2. Review
-3. Approval
-4. Publication
-5. Execution
-6. Monitoring
-7. Revision
-8. Retirement
-
-Historical versions SHALL remain preserved.
+Verification SHALL be documented.
 
 ---
 
-# 12. Exceptions
+# 9. Compliance
+
+Procedure compliance SHALL evaluate:
+
+- Execution completeness
+- Required approvals
+- Produced evidence
+- Process consistency
+
+Compliance results SHOULD be retained.
+
+---
+
+# 10. Review Requirements
+
+Procedures SHALL be reviewed:
+
+- Periodically
+- Following process changes
+- Following governance updates
+- Following audit findings
+
+Review outcomes SHALL be documented.
+
+---
+
+# 11. Exceptions
 
 Exceptions require:
 
 - Documented justification
 - Risk assessment
 - Governance approval
-- Defined review schedule
+- Review schedule
 
 Approved exceptions SHALL remain traceable.
+
+---
+
+# 12. Approval
+
+Procedures SHALL identify:
+
+- Document Owner
+- Approval Authority
+- Approval Status
+- Effective Version
+
+Approved procedures SHALL become official governance processes.
 
 ---
 

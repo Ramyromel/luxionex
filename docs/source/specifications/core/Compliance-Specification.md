@@ -12,9 +12,9 @@ Draft — Foundational Compliance Specification
 
 # 1. Purpose
 
-This specification defines the required structure, metadata, compliance methods, and quality requirements for governance compliance activities within LUXIONEX.
+This specification defines the governance requirements for compliance management within the LUXIONEX Governance Framework.
 
-The objective is to ensure that compliance is measurable, repeatable, independently verifiable, and fully traceable across the governance framework.
+The objective is to ensure that governance requirements are systematically assessed, verified, documented, and continuously improved.
 
 This specification derives authority from:
 
@@ -34,47 +34,45 @@ This specification applies to:
 
 - Governance Compliance
 - Security Compliance
-- Architecture Compliance
 - Repository Compliance
+- Architecture Compliance
 - Documentation Compliance
+- Verification Compliance
+- Evidence Compliance
 - Operational Compliance
-- Regulatory Compliance
 
 ---
 
 # 3. Compliance Objectives
 
-Every compliance assessment SHALL:
+Every compliance activity SHALL:
 
-- Evaluate governance implementation
-- Measure requirement coverage
-- Assess control effectiveness
-- Identify non-compliance
-- Support corrective actions
-- Produce objective evidence
-
-Compliance SHALL remain evidence-based.
+- Assess governance conformance
+- Verify implementation
+- Identify deficiencies
+- Produce measurable results
+- Support continuous improvement
 
 ---
 
 # 4. Required Metadata
 
-Every compliance record SHALL define:
+Every compliance artifact SHALL define:
 
 - Compliance Identifier
-- Compliance Title
+- Compliance Scope
 - Version
 - Status
-- Compliance Owner
-- Approval Authority
+- Owner
 - Assessment Date
 - Classification
+- Related Governance Artifacts
 
 ---
 
 # 5. Required Structure
 
-Compliance documents SHOULD include:
+Every compliance document SHOULD include:
 
 - Purpose
 - Scope
@@ -82,106 +80,98 @@ Compliance documents SHOULD include:
 - Assessment Method
 - Findings
 - Compliance Status
-- Evidence
 - Recommendations
+- References
 - Approval
 
----
-
-# 6. Compliance Requirements
-
-Every compliance assessment SHALL define:
-
-- Applicable requirements
-- Applicable controls
-- Assessment scope
-- Success criteria
-- Required evidence
-- Assessment method
-
-Compliance SHALL be objectively measurable.
+Additional sections MAY be included when justified.
 
 ---
 
-# 7. Governance Alignment
+# 6. Compliance Assessment
 
-Every compliance assessment SHALL align with:
+Compliance SHALL evaluate:
 
-- Enterprise Constitution
-- Governance Framework
-- Applicable Standards
-- Applicable Policies
-- Related Controls
-- Supporting Procedures
+- Governance implementation
+- Policy conformity
+- Standard implementation
+- Procedure execution
+- Control effectiveness
+- Evidence completeness
+- Traceability coverage
 
-Compliance SHALL support governance objectives.
-
----
-
-# 8. Traceability
-
-Compliance SHALL maintain traceability to:
-
-Requirement
-        ↓
-Policy
-        ↓
-Control
-        ↓
-Procedure
-        ↓
-Verification
-        ↓
-Evidence
-        ↓
-Compliance
-
-Every relationship SHALL remain auditable.
+Assessment criteria SHALL remain documented.
 
 ---
 
-# 9. Compliance Assessment Methods
+# 7. Compliance Classification
 
-Compliance MAY be evaluated through:
+Compliance results MAY be classified as:
 
-- Technical Review
-- Manual Inspection
-- Automated Validation
-- Security Assessment
-- Internal Audit
-- Governance Review
-
-Assessment methods SHALL be documented.
-
----
-
-# 10. Compliance Status
-
-Compliance SHALL be classified as:
-
-- Fully Compliant
+- Compliant
 - Partially Compliant
 - Non-Compliant
 - Not Applicable
 
-Non-compliance SHALL require corrective action plans.
+Classification criteria SHALL remain consistent.
 
 ---
 
-# 11. Compliance Lifecycle
+# 8. Verification
 
-Compliance SHALL follow the lifecycle:
+Compliance SHALL be verified using:
 
-1. Planning
-2. Assessment
-3. Evidence Collection
-4. Review
-5. Approval
-6. Reporting
-7. Remediation
-8. Reassessment
+- Manual review
+- Technical assessment
+- Automated validation
+- Architecture review
+- Repository inspection
+- Governance audit
 
-Historical compliance records SHALL remain preserved.
+Verification SHALL be repeatable and documented.
+
+---
+
+# 9. Evidence Requirements
+
+Compliance activities SHOULD produce:
+
+- Assessment Reports
+- Audit Reports
+- Review Records
+- Verification Results
+- Corrective Action Records
+- Compliance Dashboards
+
+Evidence SHALL remain linked to the assessed artifacts.
+
+---
+
+# 10. Corrective Actions
+
+Non-compliance SHALL result in:
+
+- Root cause analysis
+- Corrective action plan
+- Assigned ownership
+- Target completion date
+- Verification of remediation
+
+Corrective actions SHALL remain traceable.
+
+---
+
+# 11. Continuous Improvement
+
+Compliance SHALL support:
+
+- Governance maturity improvement
+- Process optimization
+- Risk reduction
+- Lessons learned
+- Periodic reassessment
+
+Improvement activities SHALL be documented.
 
 ---
 
@@ -194,7 +184,7 @@ Exceptions require:
 - Governance approval
 - Defined review schedule
 
-Approved exceptions SHALL remain traceable.
+Approved exceptions SHALL remain fully traceable.
 
 ---
 

@@ -12,9 +12,9 @@ Draft — Foundational Control Specification
 
 # 1. Purpose
 
-This specification defines the required structure, metadata, and quality requirements for all governance controls within LUXIONEX.
+This specification defines the structure, lifecycle, and implementation requirements for governance controls within the LUXIONEX Governance Framework.
 
-The objective is to ensure that controls are measurable, enforceable, verifiable, and consistently implemented across the governance framework.
+The objective is to ensure that governance controls are measurable, verifiable, repeatable, and consistently implemented across the enterprise.
 
 This specification derives authority from:
 
@@ -30,13 +30,15 @@ Control Specification
 
 # 2. Scope
 
-This specification applies to:
+This specification applies to all governance controls, including:
 
 - Governance Controls
 - Security Controls
+- Architecture Controls
 - Repository Controls
 - Documentation Controls
-- Architecture Controls
+- Evidence Controls
+- Verification Controls
 - Compliance Controls
 - Operational Controls
 
@@ -46,14 +48,11 @@ This specification applies to:
 
 Every control SHALL:
 
-- Mitigate defined risks
 - Enforce governance requirements
-- Support measurable compliance
-- Produce verifiable evidence
-- Be repeatable
-- Remain maintainable
-
-Controls SHALL avoid ambiguity.
+- Reduce identified risks
+- Support compliance
+- Produce measurable outcomes
+- Generate verification evidence
 
 ---
 
@@ -62,94 +61,90 @@ Controls SHALL avoid ambiguity.
 Every control SHALL define:
 
 - Control Identifier
-- Control Title
+- Control Name
 - Version
 - Status
-- Control Owner
+- Owner
 - Approval Authority
 - Effective Date
-- Review Date
 - Classification
 
 ---
 
 # 5. Required Structure
 
-Controls SHOULD include:
+Every control SHOULD include:
 
 - Purpose
 - Scope
 - Control Objective
 - Control Description
+- Control Type
 - Responsible Authority
 - Verification Method
-- Required Evidence
+- Evidence Requirements
 - References
 - Approval
 
----
-
-# 6. Control Requirements
-
-Every control SHALL define:
-
-- What is being controlled
-- Why the control exists
-- Who performs the control
-- How the control is executed
-- How effectiveness is verified
-- What evidence is produced
-
-Controls SHALL be objectively testable.
+Additional sections MAY be included when justified.
 
 ---
 
-# 7. Governance Alignment
+# 6. Control Classification
 
-Every control SHALL align with:
+Controls MAY be classified as:
 
-- Enterprise Constitution
-- Governance Framework
-- Applicable Standards
-- Applicable Policies
-- Supporting Procedures
+- Preventive
+- Detective
+- Corrective
+- Administrative
+- Technical
+- Operational
 
-Conflicting controls SHALL be resolved through governance review.
-
----
-
-# 8. Traceability
-
-Controls SHALL maintain traceability to:
-
-Requirement
-        ↓
-Policy
-        ↓
-Control
-        ↓
-Procedure
-        ↓
-Verification
-        ↓
-Evidence
-
-Every relationship SHALL remain auditable.
+Each control SHALL belong to at least one classification.
 
 ---
 
-# 9. Verification
+# 7. Control Implementation
 
-Control effectiveness MAY be verified through:
+Every control SHOULD define:
 
-- Technical Reviews
-- Manual Inspection
-- Automated Validation
-- Security Assessments
-- Compliance Reviews
-- Internal Audits
+- Implementation requirements
+- Trigger conditions
+- Expected outcomes
+- Responsible roles
+- Supporting procedures
 
-Verification results SHALL be documented.
+Implementation SHALL remain repeatable.
+
+---
+
+# 8. Verification
+
+Each control SHALL define:
+
+- Verification activities
+- Verification frequency
+- Success criteria
+- Required evidence
+- Verification authority
+
+Verification SHALL be documented.
+
+---
+
+# 9. Evidence Requirements
+
+Control execution SHOULD produce evidence such as:
+
+- Audit logs
+- Review reports
+- Test results
+- Approval records
+- Assessment reports
+- Verification reports
+
+Evidence SHALL remain traceable.
 
 ---
 
@@ -158,29 +153,26 @@ Verification results SHALL be documented.
 Compliance SHALL evaluate:
 
 - Control implementation
-- Control effectiveness
 - Verification completion
 - Evidence availability
-- Outstanding gaps
+- Operational effectiveness
+- Outstanding deficiencies
 
-Non-compliance SHALL require corrective action.
+Compliance results SHOULD be retained.
 
 ---
 
-# 11. Control Lifecycle
+# 11. Review Requirements
 
-Controls SHALL follow the lifecycle:
+Controls SHALL be reviewed:
 
-1. Definition
-2. Review
-3. Approval
-4. Implementation
-5. Verification
-6. Monitoring
-7. Improvement
-8. Retirement
+- Periodically
+- Following governance updates
+- Following risk assessments
+- Following security incidents
+- Following audit findings
 
-Historical versions SHALL remain preserved.
+Review outcomes SHALL be documented.
 
 ---
 

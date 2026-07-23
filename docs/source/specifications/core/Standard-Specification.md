@@ -12,9 +12,9 @@ Draft — Foundational Standard Specification
 
 # 1. Purpose
 
-This specification defines the required structure, metadata, and quality requirements for all standards within LUXIONEX.
+This specification defines the required structure, lifecycle, and quality requirements for governance standards within the LUXIONEX Governance Framework.
 
-The objective is to ensure that standards are consistent, measurable, verifiable, and aligned with the governance hierarchy.
+The objective is to ensure that all standards are consistent, measurable, enforceable, and aligned with enterprise governance objectives.
 
 This specification derives authority from:
 
@@ -30,13 +30,14 @@ Standard Specification
 
 # 2. Scope
 
-This specification applies to:
+This specification applies to all governance standards, including:
 
-- Governance Standards
+- Architecture Standards
 - Security Standards
 - Repository Standards
 - Documentation Standards
-- Architecture Standards
+- Evidence Standards
+- Verification Standards
 - Compliance Standards
 - Operational Standards
 
@@ -46,14 +47,11 @@ This specification applies to:
 
 Every standard SHALL:
 
-- Define measurable requirements
-- Support governance objectives
-- Be technically implementable
-- Be objectively verifiable
-- Be traceable
-- Remain maintainable
-
-Standards SHALL avoid ambiguity.
+- Define mandatory governance requirements
+- Support policy implementation
+- Enable objective verification
+- Promote consistency
+- Improve governance maturity
 
 ---
 
@@ -62,28 +60,30 @@ Standards SHALL avoid ambiguity.
 Every standard SHALL define:
 
 - Standard Title
+- Standard Identifier
 - Version
 - Status
-- Document Owner
+- Owner
 - Approval Authority
 - Effective Date
-- Review Date
 - Classification
 
 ---
 
 # 5. Required Structure
 
-Standards SHOULD include:
+Every standard SHOULD include:
 
 - Purpose
 - Scope
-- Definitions
 - Requirements
-- Verification
-- Compliance
+- Roles and Responsibilities
+- Verification Requirements
+- Evidence Requirements
 - References
 - Approval
+
+Additional sections MAY be added when justified.
 
 ---
 
@@ -91,110 +91,96 @@ Standards SHOULD include:
 
 Requirements SHALL:
 
-- Use normative language
+- Be clear
 - Be measurable
-- Be testable
-- Be implementation independent where practical
+- Be verifiable
+- Be implementation independent
+- Support governance objectives
 
-Recommended keywords include:
+Normative language SHOULD use:
 
 - SHALL
+- SHALL NOT
 - SHOULD
 - MAY
-- MUST NOT
 
 ---
 
-# 7. Governance Alignment
+# 7. Verification
 
-Every standard SHALL align with:
+Standards SHALL define:
 
-- Enterprise Constitution
-- Governance Framework
-- Applicable Policies
-- Related Controls
-- Supporting Procedures
+- Verification methods
+- Verification frequency
+- Required evidence
+- Success criteria
 
-Conflicting standards SHALL be resolved through governance review.
-
----
-
-# 8. Traceability
-
-Standards SHALL maintain traceability to:
-
-Standard
-        ↓
-Policy
-        ↓
-Control
-        ↓
-Procedure
-        ↓
-Verification
-        ↓
-Evidence
-
-Every relationship SHALL remain auditable.
+Verification SHALL remain repeatable.
 
 ---
 
-# 9. Verification
-
-Standard compliance MAY be verified through:
-
-- Technical Review
-- Governance Review
-- Compliance Assessment
-- Automated Validation
-- Manual Inspection
-- Internal Audit
-
-Verification results SHALL be documented.
-
----
-
-# 10. Compliance
+# 8. Compliance
 
 Compliance SHALL evaluate:
 
 - Requirement implementation
 - Verification completion
 - Evidence availability
-- Requirement coverage
-- Outstanding gaps
+- Governance conformity
 
-Non-compliance SHALL require corrective action.
-
----
-
-# 11. Standard Lifecycle
-
-Standards SHALL follow the lifecycle:
-
-1. Draft
-2. Review
-3. Approval
-4. Publication
-5. Implementation
-6. Monitoring
-7. Revision
-8. Retirement
-
-Historical versions SHALL remain preserved.
+Compliance results SHOULD be documented.
 
 ---
 
-# 12. Exceptions
+# 9. Review Requirements
+
+Standards SHALL be reviewed:
+
+- Periodically
+- Following governance changes
+- Following architectural changes
+- Following security reviews
+
+Review outcomes SHALL be recorded.
+
+---
+
+# 10. Version Management
+
+Standards SHALL maintain:
+
+- Version history
+- Change log
+- Approval history
+- Revision records
+
+Historical versions SHALL remain accessible.
+
+---
+
+# 11. Exceptions
 
 Exceptions require:
 
 - Documented justification
 - Risk assessment
 - Governance approval
-- Defined review schedule
+- Review schedule
 
 Approved exceptions SHALL remain traceable.
+
+---
+
+# 12. Approval
+
+Standards SHALL identify:
+
+- Document Owner
+- Approval Authority
+- Approval Status
+- Effective Version
+
+Approved standards SHALL become authoritative governance requirements.
 
 ---
 

@@ -12,9 +12,9 @@ Draft — Foundational Evidence Specification
 
 # 1. Purpose
 
-This specification defines the required structure, metadata, quality requirements, and lifecycle for governance evidence within LUXIONEX.
+This specification defines the structure, lifecycle, and governance requirements for evidence generated throughout the LUXIONEX Governance Framework.
 
-The objective is to ensure that evidence is reliable, traceable, verifiable, auditable, and sufficient to demonstrate governance compliance.
+The objective is to ensure that governance evidence is authentic, complete, verifiable, traceable, and suitable for audit and compliance activities.
 
 This specification derives authority from:
 
@@ -30,15 +30,17 @@ Evidence Specification
 
 # 2. Scope
 
-This specification applies to:
+This specification applies to all governance evidence, including:
 
-- Governance Evidence
-- Security Evidence
-- Architecture Evidence
-- Repository Evidence
-- Compliance Evidence
-- Verification Evidence
-- Audit Evidence
+- Verification reports
+- Review records
+- Audit logs
+- Approval records
+- Assessment reports
+- Compliance reports
+- Test reports
+- Repository records
+- Architecture reviews
 
 ---
 
@@ -46,14 +48,11 @@ This specification applies to:
 
 Every evidence artifact SHALL:
 
-- Demonstrate objective facts
-- Support governance decisions
-- Enable independent verification
-- Preserve traceability
-- Maintain integrity
-- Remain auditable
-
-Evidence SHALL avoid ambiguity.
+- Demonstrate governance compliance
+- Support verification activities
+- Enable audit readiness
+- Preserve decision history
+- Maintain traceability
 
 ---
 
@@ -65,121 +64,112 @@ Every evidence artifact SHALL define:
 - Evidence Title
 - Version
 - Status
-- Evidence Owner
-- Collection Date
+- Owner
+- Creation Date
 - Classification
-- Related Requirement
-- Related Control
+- Related Governance Artifact
 
 ---
 
 # 5. Required Structure
 
-Evidence SHOULD include:
+Every evidence artifact SHOULD include:
 
 - Purpose
-- Source
+- Scope
+- Evidence Source
 - Collection Method
-- Description
-- Verification Status
-- Integrity Information
+- Supporting Records
+- Verification Information
 - References
+- Approval
+
+Additional sections MAY be included when justified.
 
 ---
 
-# 6. Evidence Requirements
+# 6. Evidence Sources
 
-Every evidence artifact SHALL define:
+Evidence MAY originate from:
 
-- What was collected
-- Where it originated
-- Who collected it
-- When it was collected
-- How it was verified
-- Why it is relevant
+- Manual reviews
+- Automated verification
+- Security assessments
+- Repository analysis
+- Architecture reviews
+- Compliance assessments
+- Operational monitoring
 
-Evidence SHALL be reproducible whenever possible.
-
----
-
-# 7. Governance Alignment
-
-Every evidence artifact SHALL align with:
-
-- Enterprise Constitution
-- Governance Framework
-- Applicable Standards
-- Applicable Policies
-- Related Controls
-- Supporting Procedures
-
-Evidence SHALL support governance objectives.
+Evidence sources SHALL be documented.
 
 ---
 
-# 8. Traceability
+# 7. Evidence Integrity
 
-Evidence SHALL maintain traceability to:
+Evidence SHALL maintain:
 
-Requirement
-        ↓
-Policy
-        ↓
-Control
-        ↓
-Procedure
-        ↓
-Verification
-        ↓
-Evidence
+- Authenticity
+- Accuracy
+- Completeness
+- Consistency
+- Traceability
+- Integrity
 
-Every relationship SHALL remain auditable.
+Evidence SHALL NOT be modified without governance approval.
 
 ---
 
-# 9. Verification
+# 8. Verification
 
-Evidence MAY be verified through:
+Evidence SHALL support:
 
-- Technical Review
-- Manual Inspection
-- Independent Validation
-- Security Assessment
-- Compliance Review
-- Internal Audit
+- Verification activities
+- Compliance assessment
+- Audit review
+- Governance reporting
 
-Verification results SHALL be documented.
+Verification SHALL be repeatable.
+
+---
+
+# 9. Retention
+
+Evidence SHALL define:
+
+- Retention period
+- Storage location
+- Access restrictions
+- Archival requirements
+- Disposal requirements
+
+Retention SHALL comply with governance policies.
 
 ---
 
 # 10. Compliance
 
-Compliance SHALL evaluate:
+Evidence compliance SHALL evaluate:
 
-- Evidence completeness
-- Evidence integrity
-- Evidence authenticity
+- Completeness
+- Integrity
+- Availability
 - Traceability
-- Verification status
+- Verification support
 
-Insufficient evidence SHALL require remediation.
+Deficiencies SHALL require corrective action.
 
 ---
 
-# 11. Evidence Lifecycle
+# 11. Review Requirements
 
-Evidence SHALL follow the lifecycle:
+Evidence SHALL be reviewed:
 
-1. Collection
-2. Validation
-3. Review
-4. Approval
-5. Storage
-6. Retention
-7. Archival
-8. Disposal
+- During governance reviews
+- During audits
+- Following verification activities
+- Following major governance changes
 
-Historical evidence SHALL remain preserved according to retention requirements.
+Review outcomes SHALL be documented.
 
 ---
 

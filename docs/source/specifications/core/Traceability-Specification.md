@@ -12,9 +12,9 @@ Draft — Foundational Traceability Specification
 
 # 1. Purpose
 
-This specification defines the requirements for establishing, maintaining, and verifying traceability across the LUXIONEX governance framework.
+This specification defines the governance requirements for maintaining end-to-end traceability across the LUXIONEX Governance Framework.
 
-The objective is to ensure that every governance artifact can be traced throughout its complete lifecycle.
+The objective is to ensure that every governance artifact can be traced from its origin through implementation, verification, evidence collection, and compliance assessment.
 
 This specification derives authority from:
 
@@ -22,13 +22,7 @@ Enterprise Constitution
         ↓
 Governance Framework
         ↓
-Standards
-        ↓
-Policies
-        ↓
-Controls
-        ↓
-Requirement-Control Mapping
+Traceability Governance Standard
         ↓
 Traceability Specification
 
@@ -38,125 +32,133 @@ Traceability Specification
 
 This specification applies to:
 
-- Governance documents
+- Governance Requirements
 - Standards
 - Policies
-- Controls
 - Procedures
+- Controls
 - Specifications
+- Templates
+- Verification Records
 - Evidence
-- Verification records
-- Repositories
+- Compliance Reports
+- Repository Artifacts
 
 ---
 
-# 3. Objectives
+# 3. Traceability Objectives
 
-Traceability SHALL ensure:
+Every governance artifact SHALL:
 
-- Complete lifecycle visibility
-- Governance transparency
-- Change accountability
-- Audit readiness
-- Impact analysis
-- Requirement coverage
+- Have a unique identifier
+- Be traceable to its parent authority
+- Identify dependent artifacts
+- Support audit activities
+- Preserve governance history
 
 ---
 
-# 4. Traceability Model
+# 4. Required Metadata
 
-Traceability SHALL be maintained between:
+Every traceable artifact SHALL define:
 
-Requirement
+- Artifact Identifier
+- Artifact Type
+- Version
+- Owner
+- Parent Artifact
+- Related Artifacts
+- Status
+- Classification
+
+---
+
+# 5. Traceability Model
+
+The governance hierarchy SHALL support traceability across:
+
+Enterprise Constitution
         ↓
-Standard
+Governance Framework
         ↓
-Policy
+Standards
         ↓
-Control
+Policies
         ↓
-Procedure
+Procedures
         ↓
-Implementation
+Controls
+        ↓
+Specifications
+        ↓
+Templates
         ↓
 Verification
         ↓
 Evidence
+        ↓
+Compliance
 
----
-
-# 5. Traceability Identifiers
-
-Each traceable artifact SHALL define:
-
-- Unique identifier
-- Artifact name
-- Artifact type
-- Version
-- Owner
-- Status
-- Related artifacts
-
-Identifiers SHOULD remain stable throughout the artifact lifecycle.
+Every relationship SHALL remain documented.
 
 ---
 
 # 6. Relationship Types
 
-Relationships MAY include:
+Artifacts MAY define relationships such as:
 
-- Implements
-- References
-- Verifies
+- Parent
+- Child
 - Depends On
+- Implements
+- Verifies
+- Produces Evidence
+- References
 - Supersedes
-- Derived From
-- Related To
 
-Relationship types SHALL be documented.
+Relationship types SHALL remain explicit.
 
 ---
 
 # 7. Traceability Requirements
 
-Every governance artifact SHOULD identify:
+Traceability SHALL support:
 
-- Parent artifacts
-- Child artifacts
-- Dependencies
-- Verification records
-- Supporting evidence
+- Requirement coverage
+- Change impact analysis
+- Governance navigation
+- Audit readiness
+- Evidence collection
 
-No critical governance artifact SHOULD remain isolated.
+Broken traceability SHALL be treated as a governance deficiency.
 
 ---
 
 # 8. Verification
 
-Traceability MAY be verified through:
+Traceability SHALL be verified through:
 
 - Manual review
 - Automated validation
-- Repository analysis
-- Governance assessment
-- Audit activities
+- Repository inspection
+- Architecture review
+- Compliance assessment
 
 Verification results SHALL be documented.
 
 ---
 
-# 9. Evidence
+# 9. Evidence Requirements
 
-Traceability evidence MAY include:
+Traceability verification SHOULD produce:
 
-- Requirement mappings
-- Review records
-- Approval history
-- Repository links
-- Verification reports
-- Audit logs
+- Mapping reports
+- Dependency reports
+- Coverage reports
+- Verification records
+- Audit evidence
 
-Evidence SHALL remain available for governance review.
+Evidence SHALL remain linked to related artifacts.
 
 ---
 
@@ -164,13 +166,13 @@ Evidence SHALL remain available for governance review.
 
 Compliance SHALL evaluate:
 
-- Traceability completeness
 - Identifier consistency
-- Relationship accuracy
-- Evidence availability
+- Relationship completeness
+- Mapping accuracy
 - Verification status
+- Evidence availability
 
-Missing traceability SHALL require corrective action.
+Compliance deficiencies SHALL require corrective actions.
 
 ---
 
@@ -179,12 +181,13 @@ Missing traceability SHALL require corrective action.
 Traceability SHALL be updated whenever:
 
 - Requirements change
+- Standards change
 - Policies change
-- Controls change
 - Procedures change
-- Repositories evolve
+- Controls change
+- Repository structure changes
 
-Outdated relationships SHALL be reviewed before removal.
+Historical relationships SHALL remain preserved.
 
 ---
 
@@ -193,11 +196,11 @@ Outdated relationships SHALL be reviewed before removal.
 Exceptions require:
 
 - Documented justification
-- Governance approval
 - Risk assessment
-- Review schedule
+- Governance approval
+- Defined review schedule
 
-Exceptions SHALL remain traceable.
+Approved exceptions SHALL remain fully traceable.
 
 ---
 
