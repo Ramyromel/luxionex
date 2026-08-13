@@ -39,3 +39,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Internal repositories
+ai-research/
+architecture/
+blockchain/
+cybersecurity/
+governance/
+luxionex-governance-standards/
+luxionex-research/
+reference-architectures/
+research/
+standards/
+
+# Bootstrap artifacts
+bootstrap/
+bootstrap.backup/
+bootstrap-debug.log
