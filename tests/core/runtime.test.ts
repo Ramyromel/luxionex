@@ -25,13 +25,34 @@ describe("Runtime", () => {
     expect(result.durationMs).toBeGreaterThanOrEqual(0);
   });
 
-  it("blocks destructive plans", async () => {
+  it("blocks plans with destructive actions via the reviewer", async () => {
     const rt = new Runtime();
-    // Override plan steps to include a blocked action
-    const result = await rt.run({ goal: "deleteRepo everything" });
-    // The planner won't produce deleteRepo (falls back to executive),
-    // so this just confirms no crash and a result is returned.
-    expect(result).toBeDefined();
+
+    // Monkey-patch the planner inside this runtime instance to inject a blocked step
+    const { planner } = await import("@/core/planner");
+    const originalPlan = planner.plan.bind(planner);
+
+    planner.plan = () => ({
+      id: "test-blocked",
+      goal: "delete everything",
+      steps: [
+        {
+          id: "s1",
+          type: "github.deleteRepo",
+          connector: "github",
+          action: "deleteRepo",
+        },
+      ],
+      createdAt: Date.now(),
+    });
+
+    try {
+      const result = await rt.run({ goal: "delete everything" });
+      expect(result.success).toBe(false);
+      expect(result.blockedBy).toBeTruthy();
+    } finally {
+      planner.plan = originalPlan;
+    }
   });
 
   it("returns idle status after execution", async () => {

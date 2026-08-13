@@ -24,7 +24,8 @@ export class MemoryStore {
     const entry = this.state.get(key);
     if (!entry) return undefined;
 
-    if (entry.ttl !== undefined && Date.now() - entry.updatedAt > entry.ttl) {
+    // TTL is checked against createdAt so the expiry window is fixed from creation time
+    if (entry.ttl !== undefined && Date.now() - entry.createdAt > entry.ttl) {
       this.state.delete(key);
       return undefined;
     }

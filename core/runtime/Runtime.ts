@@ -79,10 +79,12 @@ export class Runtime {
     this.status = "idle";
     const durationMs = Date.now() - start;
 
-    await eventBus.emit("runtime.done", { planId: plan.id, durationMs }, "Runtime");
+    const allOk = results.every((r) => (r as Record<string, unknown>).ok !== false);
+
+    await eventBus.emit("runtime.done", { planId: plan.id, durationMs, allOk }, "Runtime");
 
     return {
-      success: true,
+      success: allOk,
       planId: plan.id,
       goal: input.goal,
       results,
