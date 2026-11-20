@@ -34,7 +34,7 @@ and version before relying on it.
 
 ## Run the website locally
 
-Requires Node.js and npm.
+Requires Node.js 22.x and npm. Use the same Node.js major version locally and in deployment environments.
 
 ```bash
 npm install
