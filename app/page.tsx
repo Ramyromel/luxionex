@@ -17,14 +17,6 @@ const documents = [
   },
   {
     number: "03",
-    category: "Architecture",
-    title: "Architecture Governance Model",
-    description:
-      "A structured approach to architecture principles, decisions, reviews, and system evolution.",
-    href: "https://github.com/Ramyromel/luxionex/blob/main/docs/source/architecture/Architecture-Governance-Model.md",
-  },
-  {
-    number: "04",
     category: "Security",
     title: "Security Policy",
     description:
@@ -32,7 +24,7 @@ const documents = [
     href: "https://github.com/Ramyromel/luxionex/blob/main/docs/source/policies/core/Security-Policy.md",
   },
   {
-    number: "05",
+    number: "04",
     category: "Evidence",
     title: "Evidence Governance Standard",
     description:
@@ -40,7 +32,7 @@ const documents = [
     href: "https://github.com/Ramyromel/luxionex/blob/main/docs/source/standards/core/Evidence-Governance-Standard.md",
   },
   {
-    number: "06",
+    number: "05",
     category: "Verification",
     title: "Verification Procedure",
     description:

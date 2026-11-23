@@ -208,7 +208,7 @@ a:focus-visible {
 
 .draft-note {
   margin: 24px 0 0;
-  color: #78837c;
+  color: #58645c;
   font-size: 11px;
 }
 
@@ -228,7 +228,7 @@ a:focus-visible {
 .card-meta {
   display: flex;
   justify-content: space-between;
-  color: #78837c;
+  color: #58645c;
   font-family: var(--font-system-mono), monospace;
   font-size: 9px;
   letter-spacing: 0.08em;
@@ -252,7 +252,7 @@ a:focus-visible {
 }
 
 .hierarchy-index {
-  color: #91a096;
+  color: #58645c;
   font-family: var(--font-system-mono), monospace;
   font-size: 10px;
 }
@@ -273,7 +273,7 @@ a:focus-visible {
 
 .visual-caption {
   margin: 15px 0 0;
-  color: #78837c;
+  color: #58645c;
   font-size: 10px;
 }
 
@@ -288,7 +288,7 @@ a:focus-visible {
 .principles > p {
   flex: 0 0 auto;
   margin: 0;
-  color: #7d8981;
+  color: #58645c;
   font-size: 10px;
   letter-spacing: 0.11em;
   text-transform: uppercase;
