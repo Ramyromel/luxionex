@@ -1,103 +1,240 @@
-import Image from "next/image";
+const documents = [
+  {
+    number: "01",
+    category: "Foundation",
+    title: "Enterprise Constitution",
+    description:
+      "The foundational principles and highest level of authority in the LUXIONEX governance model.",
+    href: "https://github.com/Ramyromel/luxionex/blob/main/docs/source/constitution/Enterprise-Constitution.md",
+  },
+  {
+    number: "02",
+    category: "Framework",
+    title: "Governance Framework",
+    description:
+      "How principles become a coherent system of standards, policies, controls, and verification.",
+    href: "https://github.com/Ramyromel/luxionex/blob/main/docs/source/framework/Governance-Framework.md",
+  },
+  {
+    number: "03",
+    category: "Security",
+    title: "Security Policy",
+    description:
+      "Security requirements and governance expectations for the LUXIONEX documentation framework.",
+    href: "https://github.com/Ramyromel/luxionex/blob/main/docs/source/policies/core/Security-Policy.md",
+  },
+  {
+    number: "04",
+    category: "Evidence",
+    title: "Evidence Governance Standard",
+    description:
+      "Guidance for collecting, classifying, retaining, and tracing governance evidence.",
+    href: "https://github.com/Ramyromel/luxionex/blob/main/docs/source/standards/core/Evidence-Governance-Standard.md",
+  },
+  {
+    number: "05",
+    category: "Verification",
+    title: "Verification Procedure",
+    description:
+      "A repeatable process for checking governance requirements and recording outcomes.",
+    href: "https://github.com/Ramyromel/luxionex/blob/main/docs/source/procedures/core/Verification-Procedure.md",
+  },
+];
+
+const layers = [
+  "Constitution",
+  "Framework",
+  "Standards",
+  "Policies",
+  "Controls",
+  "Procedures",
+  "Specifications",
+  "Templates",
+];
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+    <main>
+      <header className="site-header">
+        <a aria-label="LUXIONEX home" className="wordmark" href="#">
+          <span className="wordmark-mark" aria-hidden="true">
+            L
+          </span>
+          LUXIONEX
+        </a>
+        <nav aria-label="Main navigation" className="main-nav">
+          <a href="#framework">Framework</a>
+          <a href="#library">Document library</a>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            className="nav-link-external"
+            href="https://github.com/Ramyromel/luxionex"
+            rel="noreferrer"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            GitHub <span aria-hidden="true">↗</span>
           </a>
+        </nav>
+      </header>
+
+      <section aria-labelledby="hero-title" className="hero">
+        <div className="hero-copy">
+          <p className="eyebrow">
+            <span className="status-dot" aria-hidden="true" />
+            Governance framework <span className="eyebrow-divider">/</span> v0.1
+          </p>
+          <h1 id="hero-title">
+            Build with clarity.
+            <br />
+            Govern with <span>evidence.</span>
+          </h1>
+          <p className="hero-description">
+            A practical governance library for architecture, security, risk, and
+            responsible system evolution. Principles made actionable through
+            standards, controls, and verification.
+          </p>
+          <div className="hero-actions">
+            <a className="button button-primary" href="#library">
+              Explore the library <span aria-hidden="true">↓</span>
+            </a>
+            <a
+              className="button button-secondary"
+              href="https://github.com/Ramyromel/luxionex"
+              rel="noreferrer"
+              target="_blank"
+            >
+              View repository <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <p className="draft-note">
+            Foundational release <span aria-hidden="true">·</span> Documents are
+            evolving
+          </p>
+        </div>
+        <div aria-label="Governance hierarchy diagram" className="hero-visual">
+          <div className="visual-topline">
+            <span>GOVERNANCE MODEL</span>
+            <span>01 — 08</span>
+          </div>
+          <div className="hierarchy">
+            {layers.map((layer, index) => (
+              <div className="hierarchy-row" key={layer}>
+                <span className="hierarchy-index">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="hierarchy-label">{layer}</span>
+                {index === 0 && <span className="hierarchy-tag">Authority</span>}
+                {index === layers.length - 1 && (
+                  <span className="hierarchy-tag">Resources</span>
+                )}
+              </div>
+            ))}
+          </div>
+          <p className="visual-caption">
+            A traceable path from principle to practice.
+          </p>
+        </div>
+      </section>
+
+      <section aria-label="Framework principles" className="principles">
+        <p>Designed around</p>
+        <ul>
+          <li>Clear authority</li>
+          <li>Evidence-based decisions</li>
+          <li>Security by design</li>
+          <li>Continuous verification</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="framework-title" className="framework" id="framework">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">01 / The framework</p>
+            <h2 id="framework-title">From principle to practice.</h2>
+          </div>
+          <p className="section-intro">
+            Each layer has a distinct role. Together, they keep decisions
+            consistent, explainable, and reviewable.
+          </p>
+        </div>
+        <div className="framework-flow">
+          <div>
+            <span>01</span>
+            <h3>Set direction</h3>
+            <p>Constitution and framework establish principles and authority.</p>
+          </div>
+          <span aria-hidden="true" className="flow-arrow">
+            →
+          </span>
+          <div>
+            <span>02</span>
+            <h3>Make it actionable</h3>
+            <p>Standards, policies, and controls define clear expectations.</p>
+          </div>
+          <span aria-hidden="true" className="flow-arrow">
+            →
+          </span>
+          <div>
+            <span>03</span>
+            <h3>Verify and improve</h3>
+            <p>Procedures, specifications, and templates support execution.</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="library-title" className="library" id="library">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">02 / Start exploring</p>
+            <h2 id="library-title">The document library.</h2>
+          </div>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            className="text-link"
+            href="https://github.com/Ramyromel/luxionex/tree/main/docs/source"
+            rel="noreferrer"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            Read our docs
+            Browse all documents <span aria-hidden="true">↗</span>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+        <div className="document-grid">
+          {documents.map((document) => (
+            <a
+              className="document-card"
+              href={document.href}
+              key={document.number}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <div className="card-meta">
+                <span>{document.category}</span>
+                <span>{document.number}</span>
+              </div>
+              <h3>{document.title}</h3>
+              <p>{document.description}</p>
+              <span aria-hidden="true" className="card-arrow">
+                ↗
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <footer className="site-footer">
+        <a aria-label="LUXIONEX home" className="wordmark" href="#">
+          <span className="wordmark-mark" aria-hidden="true">
+            L
+          </span>
+          LUXIONEX
         </a>
+        <p>Governance for systems that earn trust.</p>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://github.com/Ramyromel/luxionex"
+          rel="noreferrer"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+          Open source on GitHub <span aria-hidden="true">↗</span>
         </a>
       </footer>
-    </div>
+    </main>
   );
 }
